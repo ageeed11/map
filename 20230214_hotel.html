@@ -159,8 +159,8 @@
 
                 console.log(selectCity + selectArea);
 
-                //篩選已決定的縣市鄉鎮區 的 藥局 
-                var listData = []; //收集篩選後的藥局資料
+                //篩選已決定的縣市鄉鎮區 的 飯店
+                var listData = []; //收集篩選後的飯店資料
                 hoteldata.forEach(function (item) {
                     if (item.Region == selectCity && item.Town == selectArea) {
                         // console.log(item);
@@ -169,7 +169,7 @@
                 });
                 console.log(listData);
 
-                //渲染藥局list-group
+                //渲染飯店list-group
                 $("#listData").empty();
                 //removeMarker();
 
